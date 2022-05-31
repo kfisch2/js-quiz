@@ -1,0 +1,19 @@
+.quiz {
+  border: 2px black solid;
+  text-align: center;
+  margin-top: 300px;
+  padding: 30px;
+};
+
+.question {
+  font-weight: bold;
+}
+
+.btn {
+  margin: 10px;
+  text-align: center;
+}
+
+.answers {
+  display: inline-block;
+}
