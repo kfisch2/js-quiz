@@ -1,19 +1,18 @@
-.quiz {
+.timer {
   border: 2px black solid;
   text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.results {
+  border: 2px black solid;
+  margin: 5px;
+  padding: 5px;
+}
+
+body {
+  border: 2px black solid;
   margin-top: 300px;
   padding: 30px;
 };
-
-.question {
-  font-weight: bold;
-}
-
-.btn {
-  margin: 10px;
-  text-align: center;
-}
-
-.answers {
-  display: inline-block;
-}

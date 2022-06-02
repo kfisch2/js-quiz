@@ -7,7 +7,7 @@ var timer = function(time) {
       time--;
       return timer(time);
     } else {
-      // alert("You have run out of time! :( ")
+    //  alert("You have run out of time! :( ")
     };
   }, 1000);
 };
@@ -15,72 +15,73 @@ var timer = function(time) {
 timer();
 
 
+// submit button
+var submit = document.querySelector(".btn")
+submit.innerHTML = "<input type='submit' name='submit'>";
+var userAnswer = submit.onclick = function(){
+  // if ans correct, next question
+  // if ans !correct, time = time - 5;
+
+}
+
+
 
 // quiz container
 var quizEl = document.querySelector(".quiz");
 
+// answers container
+var answersEl = document.querySelector(".answers")
+
+
 // quiz question container
-// var questionEl = document.querySelector(".question")
-
-var generateQuiz = function() {
-  // for loop to loop through questions and store answers
-  var quizQuestions = [
-    {
-      question: "What is the correct syntax for writing a function?",
-      answers: {
-        a: "function()",
-        b: "function{}",
-        c: "function[]", 
-        d: "function<>"
-      },
-    },
+var questionEl = document.querySelector(".question")
+function beginQuiz(questions){  
   
-    { 
-      question: "To create an array, you must wrap the elements of it with ",
-      answers: {
-        a:"{}",
-        b:"[]",
-        c:"<>",
-        d:"\/"      
-      },
-    },
-  
-    { 
-      question: "",
-      answers: {
-        a:"",
-        b:"",
-        c:"",
-        d:""
-      },
-    },
+    // quizEl.innerHTML = quizQuestions.question;
+    // var userAnswers = [];
+    // quiz questions with possible answers
+    // questions and answers in object
+    // push selected answer to userAnswers array
 
-    { 
-      question: "",
-      answers: {
-        a:"",
-        b:"",
-        c:"",
-        d:""
-      },
-    }
-  ];
-  quizEl.innerHTML= quizQuestions;
+    quizEl.textContent = "What is the correct syntax for writing a function?"
+    answersEl.innerHTML = "<input type='radio' name='answer'> 1: function() <br> <input type='radio' name='answer'> 2: function{} <br> <input type='radio' name='answer'>  3: function[] <br> <input type='radio' name='answer'>  4: function<>"
+    quizQuestions;
+  };
+
+// end of quiz when time runs out or user answers all
+function endQuiz() {
 };
 
-generateQuiz();
+
+  
+var quizQuestions = [ 
+  // { qid: 1,
+  //   questionPrompt: "question",
+  //   choice: [a, b, c, d],
+  //   verify: [1, 0, 0, 0]
+
+  //   // answers: 
+  //   //   answersEl.innerHTML = "<input type='radio' name='answer'> 1: function() <br> <input type='radio' name='answer'> 2: function{} <br> <input type='radio' name='answer'>  3: function[] <br> <input type='radio' name='answer'>  4: function<>"
+  // },
+];
+  
 
 
+  
+    // question: "To create an array, you must wrap the elements of it with ",
+    // answers: {
+    //   1:"{}",
+    //   2:"[]",
+    //   3:"<>",
+    //   4:"\/"      
+    // },
+
+ 
+// display quiz results function
+function results () {
+};
+
+beginQuiz(quizQuestions);
 
 
-
-// // // user answer?
-// var answers = question.answer[letter];
-// userAnswers.push(answers);
-
-
-
-// submit answers button
-var submit = document.querySelector(".btn")
-submit.innerHTML = "<input type='submit' name='submit'>";
 
