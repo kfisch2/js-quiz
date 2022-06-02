@@ -5,4 +5,5 @@ Test your knowledge of basic Javascript
 User attempts to complete the Javascript quiz before time runs out. 
 Highscore will be saved to local storage
 
-### Quiz website
+### Quiz 
+https://kfisch2.github.io/js-quiz/
